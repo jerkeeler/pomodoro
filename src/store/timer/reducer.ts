@@ -5,12 +5,12 @@ const initialState: TimerState = {
 };
 
 const timerReducer = (state = initialState, action: TimerActionTypes) => {
-  switch(action.type) {
+  switch (action.type) {
     case TimerAction.START_TIMER:
       return {
         ...state,
         timeRemaining: state.timeRemaining - 1,
-      }
+      };
     default:
       return state;
   }

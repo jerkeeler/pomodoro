@@ -8,11 +8,11 @@ export interface TimerState {
 }
 
 export interface StartTimerAction {
-  type: typeof TimerAction.START_TIMER,
+  type: typeof TimerAction.START_TIMER;
 }
 
 export interface StopTimerAction {
-  type: typeof TimerAction.STOP_TIMER,
+  type: typeof TimerAction.STOP_TIMER;
 }
 
-export type TimerActionTypes = StartTimerAction | StopTimerAction
+export type TimerActionTypes = StartTimerAction | StopTimerAction;
